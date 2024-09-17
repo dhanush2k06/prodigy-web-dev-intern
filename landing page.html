@@ -1,0 +1,389 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <style>
+            #shopfy{
+                position: relative;
+                left: 35%;
+            }
+            .nav {
+                position: absolute;
+                top: 20px;
+                right: 100px;
+                
+            }
+            .nav img {
+                padding: 0 10px 0 10px;
+            }
+            #signuplogo {
+                position: absolute;
+                top: 0px;
+                right: 20px;
+            }
+            .separator {
+                width: 100%;
+                height: 5px;
+                background-color: black;
+            }
+
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .u1 {
+                padding: 0;
+                margin: 0;
+                border: 1p solid black;
+                display: inline-block;
+                width: 300px;
+                position: relative;
+                left: 0px;
+            }
+            li {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                padding: 10px 0px 10px 50px;
+            }
+            li:hover {
+                color: white;
+                background-color: black;
+            }
+            
+            .content1 {
+                display: none;
+                position: absolute;
+                left: 50px;
+                top: -5px;
+                border: 1px solid black;
+                border-radius: 10px;
+                box-sizing: border-box;
+                box-shadow: 5px 5px 10px gray;
+                background-color: white;
+            }
+            .content  {
+                position: relative;
+                top:-150px ;
+                left:10px ;
+                display: inline-block;
+                
+            }
+            
+            .content:hover .content1  {
+                display: block;
+            }
+            #drop:hover {
+                animation-name: rotate;
+                animation-duration: 0.2s;
+                animation-timing-function: linear;
+                
+            }
+            @keyframes rotate {
+                from {
+
+                }
+                to {
+                    transform:rotate(90deg);
+                }
+    
+            }
+
+            .contain {
+                
+                border: 1px solid black;
+                overflow: hidden;
+                animation-name: move;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                background-color: black;
+                color: white;
+                
+                
+            }
+            .p1 {
+                position: relative;
+                top: 0;
+                left:0 ;
+                animation-name: move;
+                animation-duration: 20s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            @keyframes move {
+                from {
+
+                }
+                to {
+                    left: 100%;
+
+                }
+            }
+            #offerpost {
+               margin-left:5% ;
+               
+            
+            }
+            figcaption {
+                text-align: center;
+            }
+            .container {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: -50px;
+            }
+           
+            .item1{
+                width:500px;
+                height: 250px;
+                border: 1px solid black;
+                background:linear-gradient(to right,rgb(4, 184, 255),aqua);
+                padding: 10px;
+                overflow: auto;
+                margin-left: 50px;
+                border-radius: 10px;
+                box-shadow: 8px 8px 10px rgb(161, 158, 158), -5px -5px 10px rgb(161, 158, 158)  ;
+                
+
+            }
+            .item2{
+                width:500px;
+                height: 250px;
+                border: 1px solid black;
+                background:linear-gradient(to right,pink,rgb(233, 10, 253));
+                padding: 10px;
+                overflow: auto;
+                margin-left: 50px;
+                border-radius: 10px;
+                box-shadow: 8px 8px 10px rgb(161, 158, 158), -5px -5px 10px rgb(161, 158, 158)  ;
+
+            }
+            .item3{
+                width:500px;
+                height: 250px;
+                border: 1px solid black;
+                background:linear-gradient(to right, rgb(2, 183, 255), rgb(0, 255, 234));
+                padding: 10px;
+                overflow: auto;
+                margin-left: 50px;
+                margin-top: 50px;
+                border-radius: 10px;
+                box-shadow: 8px 8px 10px rgb(161, 158, 158), -5px -5px 10px rgb(161, 158, 158)  ;
+
+            }
+            .item4{
+                width:500px;
+                height: 250px;
+                border: 1px solid black;
+                background:linear-gradient(to right, rgb(247, 83, 83), rgb(255, 188, 5));
+                padding: 10px;
+                overflow: auto;
+                margin-left: 50px;
+                margin-top: 50px;
+                border-radius: 10px;
+                box-shadow: 8px 8px 10px rgb(161, 158, 158), -5px -5px 10px rgb(161, 158, 158)  ;
+
+            }
+            .item1, .item2 {
+                display: inline-block;
+            }
+            .item3, .item4 {
+                display: inline-block;
+            }
+            #img1, #img2, #img3, #img4  {
+                float: right;
+                border-radius: 100px;
+            }
+            
+            
+            .h1 {
+                text-align: center;
+            }
+            
+            .contact {
+                background-color: black;
+                width: 100%;
+                height:300px ;
+                color: white;
+                align-items: center;
+                margin-top: 200px;
+                padding: 10px;
+            }
+            
+
+            
+
+        </style>
+    </head>
+    <title>Shopfy</title>
+    <body>
+        <img src="media/shopfy logo.png" id="shopfy" alt="shopfy" width="350" >
+        <div class="separator"></div><br>
+
+        <div class="contain">
+            <p class="p1">Flat 50%off on latest men's products. Upcoming summer sale at latest trends for all grooming products. 90%off on purchasing more than Rs.3000 and win exciting prices </p>
+        </div>
+    
+
+        <div class="nav">
+        <img src="media/call logo.png" id="calllogo" alt="call" width="40">
+        <img src="media/map logo.png" id="maplogo" alt="call" width="40">
+        <img src="media/feeback logo.png" id="feedbacklogo" alt="call" width="40">
+        </div>
+        
+        <img src="media/signup logo.png" id="signuplogo" alt="call" width="70">
+        
+       
+
+        <div class="content">
+            <img src="media/dropdown.png" id="drop" alt="dropdown" width="50" height="50">
+            <div class="content1">
+                <table>
+                    <tr>
+                        <td><img src="media/logo.png" alt="logo" width="100" height="100"></td>
+                        <td><h1 style="position: relative; top: 10px;left: -5px;">Dhanush</h1><p style="position: relative; top: -10px;">Username</p></td>
+                    </tr>
+                </table>
+              <ul class="u1">
+                <li>Account</li>
+                <li>Your orders</li>
+                <li>Rewards</li>
+                <li>My carts</li>
+                <li>Notifications</li>
+                <li>Settings</li>
+                <li>Help</li>
+                <li>Logout</li>
+              </ul>
+            </div>
+            </div>
+            
+            <!-- categorie -->
+            <div class="container">
+             
+             
+         <figure>    
+                <img src="media/women.png" alt="women" width="80" height="80" style="border-radius: 50%;">
+                <figcaption>Women</figcaption>
+        </figure>
+
+            
+        
+        <figure>
+            <img src="media/mens.png" alt="men" width="80" height="80" style="border-radius: 50%;">
+            <figcaption>Men</figcaption>
+        </figure>
+            
+             
+        
+        <figure>
+            <img src="media/boys.png" alt="boys" width="80" height="80" style="border-radius: 50%;">
+            <figcaption>Boys</figcaption>
+        </figure>
+            
+            
+        
+        <figure>
+            <img src="media/girls.png" alt="girls" width="80" height="80" style="border-radius: 50%;">
+            <figcaption>Girls</figcaption>
+        </figure>
+            
+             
+        
+        <figure>
+            <img src="media/offers.png" alt="offers" width="80" height="80" style="border-radius: 50%;">
+            <figcaption>Ofers</figcaption>
+        </figure>    
+        
+    
+    </div>
+
+
+
+            <!--Offer post-->
+            <img src="media/offer posr.jpg" id="offerpost" alt="offer" width="90%" height="500px">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            img
+
+            <h1 style="margin-left: 5%;">Special Offers %</h1>
+
+            
+            <div class="container1">
+                
+                
+            <div class="item1">
+                
+                    <img id="img1" src="media/shirt1.png" alt="shirt1" width="200" height="250">
+                    <h1 class="h1">50% Off on Beauty products</h1>
+            </div>
+
+                
+            <div class="item2">
+                  <img id="img2" src="media/girl1.png" alt="shirt1" width="200" height="250">
+                  <h1 class="h1">30% Off on Women's Fashion and Beauty products</h1>
+            </div>
+            
+
+
+            <div class="item3">
+                 <img id="img3" src="media/girl2.png" alt="shirt1" width="200" height="250">
+                 <h1 class="h1">80% Off on Girl's Favourites</h1>
+            </div>
+
+                
+            <div class="item4">
+                 <img id="img4" src="media/boys tshirt1.png" alt="shirt1" width="200" height="250">
+                 <h1 class="h1">70% Off on Boy's Fashion</h1>
+            </div>
+            
+        </div>
+
+
+        <div class="contact">
+            <h1 style=" text-align: center;">Contact Us</h1>
+            <table style="color: white;margin-left: 300px;margin-top: 10px;line-height: 30px;">
+                <tr>
+                    <td>Email :</td>
+                    <td>xyz@gmail.com</td>
+                </tr>
+
+
+                <tr>
+                    <td>Ph.no :</td>
+                    <td>xxxx-xxxx-xx</td>
+                </tr>
+
+
+            </table>
+
+            <table style="color: white;margin-left:700px;margin-top: -60px;line-height: 25px;text-align: left;">
+                <tr>
+                    <td><h4>Connect us with</h4></td>
+                </tr>
+                <tr>
+                    <td ><img src="media/icons8-facebook-64.png" alt="facebook" width="30" height="30" style="border-radius: 100%;text-align: left;" ></td>
+                    <td>Facebook</td>
+                </tr>
+
+
+                <tr>
+                    <td><img src="media/icons8-instagram-26.png" alt="instagram" width="30" height="30" style="border-radius: 100%;text-align: left;"></td>
+                    <td>Instagram</td>
+                </tr>
+
+                
+
+
+            
+
+            </table>
+        </div>
+
+            
+           
+    
+    </body>
+</html>
+
+
+
+
+
